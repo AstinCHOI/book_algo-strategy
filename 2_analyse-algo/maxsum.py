@@ -56,8 +56,20 @@ def fastMaxSum(arr, lo, hi):
 
     return max(left + right, single)
 
+# O(N)
+def fastestMaxSum():
+    n = len(arr)
+    ret = MIN
+    psum = 0
+    for i in range(0, n):
+        psum = max(psum, 0) + arr[i]
+        ret = max(psum, ret)
+
+    return ret
+
 
 if __name__ == '__main__':
     print(inefficientMaxSum())
     print(betterMaxSum())
     print(fastMaxSum(arr, 0, len(arr)-1))
+    print(fastestMaxSum())
