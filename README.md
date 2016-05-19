@@ -33,3 +33,6 @@ When decimal fractions changes to binary, some fractions will be unlimited <- /2
 
 2\) Big-O Notation
 
+3\) NP Problem
+P(Polynomial)
+NP(Non-Polynomial)
