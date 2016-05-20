@@ -36,3 +36,5 @@ When decimal fractions changes to binary, some fractions will be unlimited <- /2
 3\) NP Problem
 P(Polynomial)
 NP(Non-Polynomial)
+NP-Complete
+NP-Hard
