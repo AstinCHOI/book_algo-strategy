@@ -1,3 +1,4 @@
+
 # book_algo-strategy
 "알고리즘 문제 해결 전략: Algorithmic Problem Solving Strategies" - 인사이트(insight)
 
@@ -34,7 +35,9 @@ When decimal fractions changes to binary, some fractions will be unlimited <- /2
 2\) Big-O Notation
 
 3\) NP Problem
-P(Polynomial)
-NP(Non-Polynomial)
-NP-Complete
-NP-Hard
+P(Polynomial): easy to solve  
+NP(Nondeterministic Polynomial): at least, easy to check  
+NP-Hard: In case NP could do reduction to something in polynomial time  
+NP-Complete: NP-Hard in NP  
+P=NP? (P⊂NP but NP⊂P?)  
+

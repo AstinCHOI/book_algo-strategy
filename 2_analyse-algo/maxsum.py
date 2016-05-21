@@ -2,8 +2,8 @@ import sys
 
 
 MIN = -sys.maxsize - 1
-#arr = [-7, 4, -3, 6, 3, -8, 3, 4]
-arr =[-2, 3, 1, 2]
+arr = [-7, 4, -3, 6, 3, -8, 3, 4]
+# arr =[-2, 3, 1, 2]
 
 # O(N^3)
 def inefficientMaxSum():
