@@ -1,6 +1,5 @@
-
 # book_algo-strategy
-"알고리즘 문제 해결 전략: Algorithmic Problem Solving Strategies" - 인사이트(insight)
+"알고리즘 문제 해결 전략: Algorithmic Problem Solving Strategies" - 인사이트(insight)  
 
 1.Start Solving Problem
 -----------------------
@@ -40,4 +39,18 @@ NP(Nondeterministic Polynomial): at least, easy to check
 NP-Hard: In case NP could do reduction to something in polynomial time  
 NP-Complete: NP-Hard in NP  
 P=NP? (P⊂NP but NP⊂P?)  
+
+4\) Verification
+- Mathematical induction: pattern (Loop in variant with induction)  
+- Proof by contradiction  
+- Pigeonhole Principle: Suppose 10 pigeons enter 9 holes, Surely there is a hole which has more than 2 pigeons.
+- Constructive proof: example
+- Nonconstructive proof: guide (algorithm)
+
+
+3.Algo Design Paradigm
+----------------------
+Basic: brute-force, exhausive search  
+
+
 
