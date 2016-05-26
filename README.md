@@ -33,7 +33,7 @@ When decimal fractions changes to binary, some fractions will be unlimited <- /2
 
 2\) Big-O Notation
 
-3\) NP Problem
+3\) NP Problem  
 P(Polynomial): easy to solve  
 NP(Nondeterministic Polynomial): at least, easy to check  
 NP-Hard: In case NP could do reduction to something in polynomial time  
@@ -51,6 +51,11 @@ P=NP? (P⊂NP but NP⊂P?)
 3.Algo Design Paradigm
 ----------------------
 Basic: brute-force, exhausive search  
+  
+- Recursive function(recursion)
+base case: atom  
+problem and subproblem  
+
 
 
 

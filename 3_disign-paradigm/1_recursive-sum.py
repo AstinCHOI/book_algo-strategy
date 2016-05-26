@@ -7,7 +7,6 @@ def for_sum(n):
 def recur_sum(n):
     if n == 1:
         return 1
-
     return n + recur_sum(n-1)
 
 

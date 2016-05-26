@@ -18,7 +18,7 @@ def recursion(n, picked, toPick):
     
     for nxt in range(smallest, n):
         picked.append(nxt)
-        pick(n, picked, toPick - 1)
+        recursion(n, picked, toPick - 1)
         picked.pop()
 
 
