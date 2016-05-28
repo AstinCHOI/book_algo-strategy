@@ -21,7 +21,7 @@ def countPairingsFalse(taken):
 
     return ret
  
-# upper limit: (n >= 10) 9 x 7 x 5 x 3 x 1 = 945
+# upper limit(n <= 10): 9 x 7 x 5 x 3 x 1 = 945
 def countPairings(taken):
     firstFree = -1
     for i in range(0, n):
