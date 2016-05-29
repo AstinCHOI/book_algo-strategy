@@ -36,9 +36,9 @@ def countPairings(taken):
     
     for pairWidth in range(firstFree+1, n):
         if not taken[pairWidth] and areFriends[firstFree][pairWidth]:
-            taken[i] = taken[pairWidth] = True
+            taken[firstFree] = taken[pairWidth] = True
             ret += countPairings(taken)
-            taken[i] = taken[pairWidth] = False
+            taken[firstFree] = taken[pairWidth] = False
      
     return ret
 
@@ -67,5 +67,5 @@ if __name__ == '__main__':
                 areFriends[int(pair[i])][pre] = True
 
         taken = [False for row in range(10)]
-        print(countPairingsFalse(taken))
+        print(countPairings(taken))
 
