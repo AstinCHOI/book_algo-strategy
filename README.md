@@ -52,9 +52,13 @@ P=NP? (P⊂NP but NP⊂P?)
 ----------------------
 Basic: brute-force, exhausive search  
   
-- Recursive function(recursion)
+- Recursive function(recursion)  
 base case: atom  
 problem and subproblem  
+
+- Optimization problem  
+Best answer in many  
+TSP(Traveling Salesman Problem)  
 
 
 

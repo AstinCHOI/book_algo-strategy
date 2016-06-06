@@ -14,7 +14,7 @@ def recursion(n, picked, toPick):
     if not picked:
         smallest = 0
     else:
-        smallest = picked[len(picked)-1] + 1
+        smallest = picked[-1] + 1
     
     for nxt in range(smallest, n):
         picked.append(nxt)
