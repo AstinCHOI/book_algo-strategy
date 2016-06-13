@@ -10,7 +10,7 @@ dist = [
     [2, 2, 4, 0]
 ]
 
-def shortestPath(path, visited, currentLength):
+def shortestPath(path, visited, currentLength=0):
     if(len(path) == n):
         return currentLength + dist[path[0]][path[-1]]
     ret = sys.maxsize
@@ -33,5 +33,5 @@ def shortestPath(path, visited, currentLength):
 
     
 if __name__ == '__main__':
-    short = shortestPath([0], [True, False, False, False], 0)
+    short = shortestPath([0], [True, False, False, False])
     print(short)

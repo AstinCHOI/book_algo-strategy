@@ -56,7 +56,7 @@ def cover(board):
 # board[i][j] = 0 means '. empty'
 if __name__ == '__main__': 
     cases = raw_input('num of cases(<=30): ')
-    for i in cases:
+    for i in range(int(cases)):
         # cells <= 50
         
         # hw = raw_input('High(H>=1) | Width(W<=20): ')
