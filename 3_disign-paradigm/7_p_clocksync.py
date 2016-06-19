@@ -16,7 +16,11 @@ linked = [
 ]
 
 def areAligned(clocks):
-    pass
+    for clock in clocks:
+        if clock != 12:
+            return False
+    
+    return True
 
 def push(clocks, swtch):
     for clock in range(CLOCKS):
@@ -25,7 +29,7 @@ def push(clocks, swtch):
             if clocks[clock] == 15:
                 clocks[clock] = 3
 
-def slove(clocks, swtch):
+def solve(clocks, swtch):
     if swtch == SWITCHES:
         if areAligned(clocks):
             return 0
@@ -38,7 +42,13 @@ def slove(clocks, swtch):
     
     return ret
 
+
 if __name__ == '__main__':
-    cases = raw_input('num of cases(<=30): ')
-    for i in range(cases):
-        hw = raw_input('Clocks :')
+    # cases = raw_input('num of cases(<=30): ')
+    # for i in range(int(cases)):
+        # clocks = raw_input('16 clocks : ')
+        # cl = [int(clock) for clock in clocks.split()]
+        
+    # cl = [12,6,6,6,6,6,12,12,12,12,12,12,12,12,12,12]
+    cl = [12, 9, 3, 12, 6, 6, 9, 3, 12, 9, 12, 9, 12, 12, 6, 6]
+    print(solve(cl, 0))
