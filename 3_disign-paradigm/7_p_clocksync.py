@@ -39,7 +39,7 @@ def solve(clocks, swtch):
     for cnt in range(4):
         ret = min(ret, cnt + solve(clocks, swtch + 1))
         push(clocks, swtch)
-    
+    # push x 4 = original state
     return ret
 
 

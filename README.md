@@ -60,6 +60,17 @@ problem and subproblem
 Best answer in many  
 TSP(Traveling Salesman Problem)  
 
+- Permutation & Combination  
+Permutation(N!): to the act of arranging all the members of a set into some sequence or order, or if the set is already ordered, rearranging (reordering) its elements, a process called permuting  
+(if N > 10, you shoud consider other way than exhausive search)  
+Combination: a way of selecting items from a collection, such that (unlike permutations) the order of selection does not matter.    
+
+- Divide & Conquer  
+1\) devide
+2\) merge
+3\) base case  
+
+
 
 
 
