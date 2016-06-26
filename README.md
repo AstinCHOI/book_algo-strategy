@@ -70,6 +70,11 @@ Combination: a way of selecting items from a collection, such that (unlike permu
 2\) merge
 3\) base case  
 
+- How divide when A^m is odd    
+A^(m-1) * A vs A^(m/2) * A^((m/2)+1)  
+
+- merge and quick sort  
+
 
 
 
