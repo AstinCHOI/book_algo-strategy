@@ -64,7 +64,7 @@ def subFrom(a, b):
 
     return normalize(a)
 
-
+# 2^k numbers -> n = 2^k -> k = logn, 3^k multiply => 3^logn => n^log3 
 def karatsuba(a, b):
     an = len(a)
     bn = len(b)
