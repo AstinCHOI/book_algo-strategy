@@ -1,9 +1,8 @@
 
 ## My Answer (1)
-def check_hug(member, s_fan, num):
-    FIX = int('1' * num, 2)
-    result = (int(member, 2) | int(s_fan, 2)) & FIX 
-    return result == FIX
+def check_hug(member, s_fan, fix):
+    result = (int(member, 2) | int(s_fan, 2)) & fix 
+    return result == fix
 
 
 def fan_meeting(member, fan):
@@ -14,8 +13,9 @@ def fan_meeting(member, fan):
     fan = fan.replace('M', '0').replace('F', '1')
 
     ret = 0
+    FIX = int('1' * mem_num, 2)
     for i in range(fan_num-mem_num+1):
-        ret += check_hug(member, fan[i:mem_num+i], mem_num)
+        ret += check_hug(member, fan[i:mem_num+i], FIX)
 
     return ret
 
@@ -131,6 +131,20 @@ def karatsuba(a, b):
     
     return ret
 
+
+def hugs(members, fans):
+    N = len(members)
+    M = len(fans)
+
+    A = [members[i] == 'M' for i in range(N)]
+    B = [fans[i] == 'M' for i in range(M-i-1)]
+
+    C = karatsuba(A, B)
+    allHugs = 0
+    for i in range(N-1, M):
+        if C[i] == 0:
+            allHugs += 1
+    return allHugs
 
 if __name__ == '__main__':
     # case 1
