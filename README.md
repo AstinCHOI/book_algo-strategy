@@ -63,7 +63,20 @@ TSP(Traveling Salesman Problem)
 - Permutation & Combination  
 Permutation(N!): to the act of arranging all the members of a set into some sequence or order, or if the set is already ordered, rearranging (reordering) its elements, a process called permuting  
 (if N > 10, you shoud consider other way than exhausive search)  
+
+ex) 3 of 5 (A B C D E), 5 P 3 is 5 x 4 x 3 == 60  
+n P r == (n-0)(n-1)(n-2)...(n-r-1)  
+== (n-0)(n-1)(n-2)...(n-r-1)(n-r)...1 / (n-r)!  
+== n! / (n-r)!  
+  
 Combination: a way of selecting items from a collection, such that (unlike permutations) the order of selection does not matter.    
+
+ex) 3 of 5 (A B C D E), 5 C 3 is 5 x 4 x 3 / 3! == 10  
+n C r == n P r / r!
+== n! / (n-r)![r!]
+
+n C r == n C n-r  
+ex) 5 C 3 == 5 C 2, 5 C 0 == 5 C 5, 5 C 1 == 5 C 4 ..
 
 - Divide & Conquer  
 1\) devide
@@ -75,7 +88,10 @@ A^(m-1) * A vs A^(m/2) * A^((m/2)+1)
 
 - merge and quick sort  
 
-
+- Dynamic Programming  
+1\) binomial coefficient
+In mathematics, binomial coefficients are a family of positive integers that occur as coefficients in the binomial theorem.  
+They are indexed by two nonnegative integers; the binomial coefficient indexed by n and k  
 
 
 
