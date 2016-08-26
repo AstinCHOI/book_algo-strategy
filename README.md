@@ -92,6 +92,7 @@ A^(m-1) * A vs A^(m/2) * A^((m/2)+1)
 1\) binomial coefficient
 In mathematics, binomial coefficients are a family of positive integers that occur as coefficients in the binomial theorem.  
 They are indexed by two nonnegative integers; the binomial coefficient indexed by n and k  
-
+2\) memoization
+3\) referential transparent function
 
 
